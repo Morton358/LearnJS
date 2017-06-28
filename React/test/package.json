@@ -1,0 +1,14 @@
+{
+  "name": "test-react",
+  "version": "1.0.0",
+  "description": "React tutorial",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Volodymyr Kovalchuk",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.14.1"
+  }
+}

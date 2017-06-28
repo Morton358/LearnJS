@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> test </title>
+	
+
+	
+</head>
+<body>
+		<script src="react/react.js"></script>
+		<script src="react/react-dom.js"></script>
+		<script src="react/browser.min.js"></script>
+		<div id="area"></div> 
+		<script type="text/babel">
+			var Hello = React.createClass({
+				render: function(){
+					return (
+					<h1> Hello Worlddd </h1>	
+					);
+				}
+			});
+			ReactDom.render(
+				<Hello />,
+				document.getElementById('area')
+			);
+		</script>
+		
+</body>
+</html>
