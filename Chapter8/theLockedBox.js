@@ -1,3 +1,5 @@
+'use strict';
+const _content = Symbol("_content")
 const box = {
     locked: true,
     unlock() {
@@ -6,10 +8,10 @@ const box = {
     lock() {
         this.locked = true;
     },
-    _content: [],
+    [_content]: [],
     get content() {
         if (this.locked) throw new Error('Locked!');
-        return this._content;
+        return this[_content];
     }
 };
 
@@ -40,3 +42,4 @@ try {
 }
 console.log(box.locked);
 // → true
+console.log(box._content);
